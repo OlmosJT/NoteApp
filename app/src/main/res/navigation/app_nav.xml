@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.noteappjt.presentation.ui.screen.SplashScreen"
+        android:label="screen_splash"
+        tools:layout="@layout/screen_splash" >
+        <action
+            android:id="@+id/action_splashScreen_to_mainScreen"
+            app:destination="@id/mainScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="uz.gita.noteappjt.presentation.ui.screen.MainScreen"
+        android:label="screen_main"
+        tools:layout="@layout/screen_main" >
+        <action
+            android:id="@+id/action_mainScreen_to_addNoteScreen"
+            app:destination="@id/addNoteScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_addTaskScreen"
+            app:destination="@id/addTaskScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_trashScreen"
+            app:destination="@id/trashScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_editNoteScreen"
+            app:destination="@id/editNoteScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_editTaskScreen"
+            app:destination="@id/editTaskScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_aboutScreen"
+            app:destination="@id/aboutScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteScreen"
+        android:name="uz.gita.noteappjt.presentation.ui.screen.AddNoteScreen"
+        android:label="screen_add_note"
+        tools:layout="@layout/screen_add_note" />
+    <fragment
+        android:id="@+id/addTaskScreen"
+        android:name="uz.gita.noteappjt.presentation.ui.screen.AddTaskScreen"
+        android:label="screen_add_task"
+        tools:layout="@layout/screen_add_task" />
+    <fragment
+        android:id="@+id/trashScreen"
+        android:name="uz.gita.noteappjt.presentation.ui.screen.TrashScreen"
+        android:label="screen_trash"
+        tools:layout="@layout/screen_trash" />
+    <fragment
+        android:id="@+id/editNoteScreen"
+        android:name="uz.gita.noteappjt.presentation.ui.screen.EditNoteScreen"
+        android:label="screen_edit_note"
+        tools:layout="@layout/screen_edit_note" />
+    <fragment
+        android:id="@+id/editTaskScreen"
+        android:name="uz.gita.noteappjt.presentation.ui.screen.EditTaskScreen"
+        android:label="screen_edit_task"
+        tools:layout="@layout/screen_edit_task" />
+    <fragment
+        android:id="@+id/aboutScreen"
+        android:name="uz.gita.noteappjt.presentation.ui.screen.AboutScreen"
+        android:label="screen_about"
+        tools:layout="@layout/screen_about" />
+</navigation>

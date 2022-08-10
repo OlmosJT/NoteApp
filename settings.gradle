@@ -1,0 +1,24 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url "https://a8c-libs.s3.amazonaws.com/android" }
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url "https://a8c-libs.s3.amazonaws.com/android" }
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "NoteApp"
+include ':app'

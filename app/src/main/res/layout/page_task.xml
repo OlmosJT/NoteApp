@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context=".presentation.ui.pager.TaskPage">
+
+    <ImageView
+        android:id="@+id/placeHolder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/svg_empty"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        tools:visibility="visible"
+        tools:ignore="ContentDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listTasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/task_item"/>
+
+</FrameLayout>

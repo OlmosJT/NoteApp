@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="title">Title</string>
+    <string name="do_you_accept_to_delete_all_notes">Do you accept to delete all notes?</string>
+    <string name="warning">Warning</string>
+    <string name="info_note">"Quick Note is a free and full-featured note-taking app.It's created by Olmos Davronov and designed for without the need for a monthly subscription.
+
+Quick Note is incredibly freeform when it comes to taking quick, short-cut notes. Each Note has a functionality to restore itself after deleting in trash section. Also task based functionalities has been added for benefit that is basically  where you can add any kind of note or a task you like, anywhere you want. This means all remindable information is kept in your single device."</string>
+</resources>
